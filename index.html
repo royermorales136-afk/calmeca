@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="calmeca, puebla, mexico, pueblo, tepexco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calmeca</title>
+    <link rel="icon" href="imagenes/favicon.ico">
+    <link rel="stylesheet" href="CSS/main.css">
+    
+   
+</head>
+<body>
+    <section>
+        <div class="box">
+            <h1>NUESTRA UBICACION EN EL PLANETA!</h1>
+            <P>BONITO EL PUEBLO DONDE HE NACIDO!</P>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114202.20348237664!2d-98.70308407732323!3d18.61761042013158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce57bf5a677b61%3A0x150c4c06dbdbfe0e!2s74557%20Calmeca%2C%20Pue.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1752000266729!5m2!1ses-419!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+            <div class="header">
+               <div class="logo-container">
+                <h1>SAN JUAN CALMECA</h1>
+                </div>
+            </div>
+          <nav>
+               <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="videos.html">DESCARGAS</a></li>
+                <li><a href="radio.html" target="_blank">RADIO</a></li>
+                <li><a href="productos.html" target="_blank">PRODUCTOS</a></li>
+            </ul>
+
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">INICIO</a></li>
+                <li class="hideOnMobile"><a href="galeria.html">GALERIA</a></li>
+                <li class="hideOnMobile"><a href="videos.html">DESCARGAS</a></li>
+                <li class="hideOnMobile"><a href="radio.html" target="_blank">RADIO</a></li>
+                <li class="hideOnMobile"><a href="productos.html" target="_blank">PRODUCTOS</a></li>
+                <li class="menu-button" onclick=showSidebar()><span></span><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+
+    <main>
+         <div class="content">
+          <img src="imagenes/imagen008.jpg" alt="iglesia de san juan calmeca"> 
+            <h2>BIENVENIDOS!</h2>
+            <p>San Juan calmeca:lindo pueblo ubicado en la mixteca poblana,colindando con el estado de Morelos...</p>
+          </div> <br><br><br><br>
+
+         <article>
+         <h2>LA CAMA PINTADA!</h2>
+         <img src="imagenes/camapinta.jpg" alt="foto de una zona arqueolojica de san juan calmeca">
+         <p>Descubrimos historia viva en San Juan Calmeca, Tepexco! 
+         Con el objetivo de adentrarnos en el patrimonio arqueológico de la entidad, el gobernador Alejandro Armenta recorrió la junta auxiliar de Calmeca (2025-2028), en particular el espacio denominado "Cama de Piedra", donde visitó vestigios que nos conectan con la grandeza de nuestras raíces.
+         ¡Porque Puebla es mágico y milenario!</p>
+         </article>
+
+         
+
+    </main>
+
+    <footer class="footer">
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/19565950552" target="_blank">
+            <img class="whatsapp" src="iconos/whatsapp.png" alt="Chat on WhatsApp">
+        </a>
+        <a href="https://facebook.com/profile.php?id=100080139273804" target="_blank">
+        <img class="facebook" src="iconos/facebook.png" alt="icono de facebbok"></a>
+
+        <a href="https://www.youtube.com/channel/UC0s3RTFFku2ij34fcEQ9tqA" target="_blank">
+        <img class="youtube" src="iconos/youtube.png" alt="icono de youtube"></a>
+
+        <p class="copyright-text">
+            &copy;<span id="currentYear"><p>Disenado por:San Juan Calmeca.todos los derechos reservados</span>
+        </p>
+        <hr>
+       <p><a href="mailto:royermorales136@gmail.com">royermorales136@gmail.com</a></p>
+    </footer>
+
+    <script>
+      function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+      }
+  
+      const yearElement = document.getElementById('currentYear');
+
+      yearElement.textContent = new Date().getFullYear();
+    </script>
+ 
+</body>
+</html>

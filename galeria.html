@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GALERIA</title>
+
+  
+</head>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  color: yellowgreen;
+  font-size: 22px;
+}
+
+.header {
+  background-color: rgb(163, 64, 64);
+  text-align: center;
+  padding: 32px;
+}
+
+.header p {
+  font-size: large;
+  font-weight: 500;
+  color: yellowgreen;
+}
+
+   img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: gold;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: gold;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  font-size: 32px;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  display: none;
+  float: left;
+  width: 16.66%;
+}
+
+</style>
+
+<body>
+
+  
+  
+   <!-- Header -->
+<div class="header">
+    <a href="index.html">REGRESAR AL INICIO</a> <br><br>
+
+  <h1>Galeria de San Juan Calmeca!</h1>
+  <p>RECOPILACION DE LAS MEJORES FOTOS DE NUESTRO PUEBLO! <br><br><br>
+  Crees tener una foto bonita de nuestro pueblo? mandamela por whatsapp o correo y  con gusto la pongo en la pagina...</p>
+</div>
+
+<!--
+
+
+
+
+  <div class="row">
+
+    <div class="column">
+
+      <div class="container">
+      <a href="imagenes/imagen001.png" target="_blank">
+      <img src="imagenes/imagen001.png">
+      </a>
+      <div class="abajoiz">cerro gordo</div>
+      </div>
+     
+      <div class="container">
+      <a href="imagenes/imagen002.png" target="_blank">
+      <img src="imagenes/imagen002.png">
+      </a>
+      <div class="abajoiz">comida tipica "shocomole"</div>
+      </div>
+
+      <div class="container">
+      <a href="imagenes/imagen003.png" target="_blank">
+      <img src="imagenes/imagen003.png">
+      </a>
+      <div class="abajoiz">templo</div>
+      </div>
+
+      <div class="container">
+       <a href="imagenes/imagen004.png" target="_blank">
+       <img src="imagenes/imagen004.png">
+       </a>
+       <div class="abajoiz">iglesia</div>
+      </div>
+
+    </div>
+
+
+     <div class="column">
+
+      <div class="container">
+         <a href="imagenes/imagen005.jpg" target="_blank">
+         <img src="imagenes/imagen005.jpg">
+         </a>
+         <div class="abajoiz">ramon rojo "sonido la changa" y manuel hidalgo "sonido centella"</div>
+      </div>
+
+      <div class="container">
+         <a href="imagenes/imagen006.jpg" target="_blank">
+         <img src="imagenes/imagen006.jpg">
+         </a>
+         <div class="abajoiz">fan de ramon rojo "pepe hidalgo"</div> 
+      </div>
+
+      <div class="container">
+         <a href="imagenes/imagen007.jpg" target="_blank">
+         <img src="imagenes/imagen007.jpg">
+         </a>
+         <div class="abajoiz">una mas con el maestro,"ramon rojo sonido la changa!"</div>
+         </div>
+    </div>
+
+    <div class="column">
+
+       <div class="container">
+             <a href="imagenes/imagen008.jpg" target="_blank">
+         <img src="imagenes/imagen008.jpg">
+         </a>
+         <div class="abajoiz">imagen de iglesia uno</div>
+       </div>
+
+       <div class="container">
+                <a href="imagenes/imagen009.jpg" target="_blank">
+         <img src="imagenes/imagen009.jpg">
+         </a>
+         <div class="abajoiz">imagende de iglesia dos</div>
+       </div>
+
+       <div class="container">
+                <a href="imagenes/imagen013.jpg" target="_blank">
+         <img src="imagenes/imagen013.jpg">
+         </a>
+         <div class="abajoiz">nuestro arco de bienvenida!</div>
+       </div>
+
+    </div>
+
+    <div class="column">
+
+         <div class="container">
+           <a href="imagenes/imagen010.jpg" target="_blank">
+         <img src="imagenes/imagen010.jpg">
+         </a>
+         <div class="abajoiz">imagen de iglesia tres</div>
+         </div>
+
+         <div class="container">
+                <a href="imagenes/imagen011.jpg" target="_blank">
+         <img src="imagenes/imagen011.jpg">
+         </a>
+           <div class="abajoiz">imagen de iglesia cuatro</div>
+         </div>
+
+         <div class="container">
+                     <a href="imagenes/imagen012.jpg" target="_blank">
+         <img src="imagenes/imagen012.jpg">
+         </a>
+         <div class="abajoiz">desfile de angeles</div>
+         </div>
+
+        
+
+    </div>
+  
+
+      
+  </div>  -->
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 16</div>
+    <img src="imagenes/imagen001.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 16</div>
+    <img src="imagenes/imagen002.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 16</div>
+    <img src="imagenes/imagen003.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 16</div>
+    <img src="imagenes/imagen004.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 16</div>
+    <img src="imagenes/imagen005.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 16</div>
+    <img src="imagenes/imagen006.jpg" style="width:100%">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">7 / 16</div>
+    <img src="imagenes/imagen007.jpg" style="width:100%">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">8 / 16</div>
+    <img src="imagenes/imagen008.jpg" style="width:100%">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">9 / 16</div>
+    <img src="imagenes/imagen009.jpg" style="width:100%">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">10 / 16</div>
+    <img src="imagenes/imagen010.jpg" style="width:100%">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">11 / 16</div>
+    <img src="imagenes/imagen011.jpg" style="width:100%">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">12 / 16</div>
+    <img src="imagenes/imagen012.jpg" style="width:100%">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">13 / 16</div>
+    <img src="imagenes/imagen013.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="imagenes/imagen001.png" style="width:100%" onclick="currentSlide(1)" alt="EL CERRO GORDO">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagenes/imagen002.png" style="width:100%" onclick="currentSlide(2)" alt="UN RICO SHOCOMOLE">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagenes/imagen003.png" style="width:100%" onclick="currentSlide(3)" alt="TEMPLO">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagenes/imagen004.png" style="width:100%" onclick="currentSlide(4)" alt="VISTA DE IGLESIA">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="imagenes/imagen005.jpg" style="width:100%" onclick="currentSlide(5)" alt="RAMON ROJO (SONIDO LA CHANGA) Y MANUEL HIDALGO (SONIDO CENTELLA)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="imagenes/imagen006.jpg" style="width:100%" onclick="currentSlide(6)" alt="FOTO DE FAN DE SONIDO LA CHANGA (PEPE HIDALGO)">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="imagenes/imagen007.jpg" style="width:100%" onclick="currentSlide(7)" alt="UNA MAS CON EL MAESTRO RAMON ROJO (SONIDO LA CHANGA)">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="imagenes/imagen008.jpg" style="width:100%" onclick="currentSlide(8)" alt="IMAGEN DE IGLESIA UNO">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="imagenes/imagen009.jpg" style="width:100%" onclick="currentSlide(9)" alt="IMAGEN DE IGLESIA DOS">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="imagenes/imagen010.jpg" style="width:100%" onclick="currentSlide(10)" alt="IMAGEN DE IGLESIA TRES">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="imagenes/imagen011.jpg" style="width:100%" onclick="currentSlide(11)" alt="IMAGEN DE IGLESIA CUATRO">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="imagenes/imagen012.jpg" style="width:100%" onclick="currentSlide(12)" alt="DESFILE DE ANGELES">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="imagenes/imagen013.jpg" style="width:100%" onclick="currentSlide(13)" alt="NUESTRO ARCO DE BIENVENIDA!">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+</div>
+</body>
+</html>
